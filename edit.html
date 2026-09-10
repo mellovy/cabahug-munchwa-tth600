@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Edit Solo Leveling - Munchwa</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<input type="checkbox" id="theme-toggle" class="theme-toggle-checkbox">
+<div class="page">
+
+<nav>
+  <h1>MUNCHWA</h1>
+  <div class="nav-links">
+    <a href="index.html">LIST</a>
+  <label class="theme-switch" for="theme-toggle">🌓 THEME</label>
+  </div>
+</nav>
+
+<main>
+  <h2>EDIT ENTRY</h2>
+  <div class="card">
+    <form action="view.html" method="get">
+      <label for="title">TITLE</label>
+      <input type="text" id="title" name="title" value="Solo Leveling" required>
+
+      <label for="chapters">CHAPTERS READ</label>
+      <input type="number" id="chapters" name="chapters" value="179" min="0" required>
+
+      <label for="status">STATUS</label>
+      <select id="status" name="status">
+        <option value="reading">READING</option>
+        <option value="completed" selected>COMPLETED</option>
+        <option value="planned">PLAN TO READ</option>
+        <option value="dropped">DROPPED</option>
+      </select>
+
+      <label for="rating">RATING (0-10)</label>
+      <input type="number" id="rating" name="rating" value="10" min="0" max="10">
+
+      <label for="notes">NOTES</label>
+      <textarea id="notes" name="notes">Peak power fantasy. Reread someday.</textarea>
+
+      <div class="form-actions">
+        <button type="submit" class="btn-primary">SAVE CHANGES</button>
+        <a class="btn btn-view" href="view.html">CANCEL</a>
+      </div>
+    </form>
+  </div>
+</main>
+
+</div>
+</body>
+</html>

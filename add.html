@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Add Entry - Munchwa</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<input type="checkbox" id="theme-toggle" class="theme-toggle-checkbox">
+<div class="page">
+
+<nav>
+  <h1>MUNCHWA</h1>
+  <div class="nav-links">
+    <a href="index.html">LIST</a>
+  <label class="theme-switch" for="theme-toggle">🌓 THEME</label>
+  </div>
+</nav>
+
+<main>
+  <h2>ADD NEW ENTRY</h2>
+  <div class="card">
+    <form action="index.html" method="get">
+      <label for="title">TITLE</label>
+      <input type="text" id="title" name="title" required>
+
+      <label for="chapters">CHAPTERS READ</label>
+      <input type="number" id="chapters" name="chapters" min="0" required>
+
+      <label for="status">STATUS</label>
+      <select id="status" name="status">
+        <option value="reading">READING</option>
+        <option value="completed">COMPLETED</option>
+        <option value="planned">PLAN TO READ</option>
+        <option value="dropped">DROPPED</option>
+      </select>
+
+      <label for="rating">RATING (0-10)</label>
+      <input type="number" id="rating" name="rating" min="0" max="10">
+
+      <label for="notes">NOTES</label>
+      <textarea id="notes" name="notes" placeholder="optional notes..."></textarea>
+
+      <div class="form-actions">
+        <button type="submit" class="btn-primary">ADD ENTRY</button>
+        <a class="btn btn-view" href="index.html">CANCEL</a>
+      </div>
+    </form>
+  </div>
+</main>
+
+</div>
+</body>
+</html>
